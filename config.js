@@ -8,6 +8,7 @@ module.exports = {
 	"extKeyRequired": true,
 	"awareness": true,
 	"bodyParser": false,
+	"awarenessEnv": true,
 
 	"errors": {},
 	"schema": {
