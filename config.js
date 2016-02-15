@@ -10,7 +10,10 @@ module.exports = {
 	"bodyParser": false,
 	"awarenessEnv": true,
 
-	"errors": {},
+	"errors": {
+		"400": "Database Error",
+		"401": "You do not have access to this environment"
+	},
 	"schema": {
 		"/redirect" : {
 			"_apiInfo": {
