@@ -12,7 +12,7 @@ module.exports = {
 
 	"errors": {
 		"400": "Database Error",
-		"401": "You do not have access to this environment"
+		"401": "You do not have access to this environment %envCode%"
 	},
 	"schema": {
 		"/redirect" : {
