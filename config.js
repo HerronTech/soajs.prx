@@ -2,6 +2,7 @@
 
 module.exports = {
 	"serviceName": "proxy",
+	"serviceGroup": "SOAJS Core Services",
 	"servicePort": 4009,
 	"requestTimeout": 30,
 	"requestTimeoutRenewal": 5,
