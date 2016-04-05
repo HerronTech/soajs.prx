@@ -19,11 +19,20 @@
   },
   "devDependencies": {
 
+    "grunt":"*",
+    "grunt-contrib-jshint":"*",
+    "grunt-jsdoc" : "*",
+    "grunt-contrib-clean" : "*",
+    "grunt-mocha-test" : "*",
+    "grunt-env" : "*",
+    "grunt-istanbul" : "*",
+    "grunt-coveralls" : "*",
+    "jshint" : "*",
+    "mocha": "*"
+
   },
   "dependencies": {
-    "request": "*"
-  },
-  "peerDependencies": {
-    "soajs": "0.2.*"
+    "request": "*",
+    "soajs": "0.3.*"
   }
 }

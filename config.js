@@ -1,6 +1,12 @@
 "use strict";
 
 module.exports = {
+	type: 'service',
+	prerequisites: {
+		cpu: '',
+		memory: ''
+	},
+	"serviceVersion": 1,
 	"serviceName": "proxy",
 	"serviceGroup": "SOAJS Core Services",
 	"servicePort": 4009,
