@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "request": "*",
-    "soajs": "0.3.*"
+    "soajs": "0.2.*"
   }
 }
