@@ -32,7 +32,7 @@
 
   },
   "peerDependencies": {
-    "soajs": "0.2.x"
+    "soajs": "0.2.*"
   },
   "dependencies": {
     "request": "*"
