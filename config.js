@@ -19,7 +19,8 @@ module.exports = {
 
 	"errors": {
 		"400": "Database Error",
-		"401": "You do not have access to this environment %envCode%"
+		"401": "You do not have access to this environment %envCode%",
+		"402": "The requested host is down."
 	},
 	"schema": {
 		"/redirect" : {
