@@ -31,10 +31,8 @@
     "mocha": "*"
 
   },
-  "peerDependencies": {
-    "soajs": "0.2.*"
-  },
   "dependencies": {
-    "request": "*"
+    "request": "*",
+    "soajs": "soajs/soajs.git#develop"
   }
 }
