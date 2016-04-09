@@ -13,6 +13,7 @@ module.exports = {
 	"requestTimeout": 30,
 	"requestTimeoutRenewal": 5,
 	"extKeyRequired": true,
+	"session": true,
 	"awareness": true,
 	"bodyParser": false,
 	"awarenessEnv": true,
