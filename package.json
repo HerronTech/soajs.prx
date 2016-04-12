@@ -18,7 +18,10 @@
     "test": "grunt test"
   },
   "devDependencies": {
-
+    "soajs.mongodb.data": "0.1.*",
+    "soajs.controller": "0.2.*",
+    "soajs.dashboard": "0.3.*",
+    "soajs.urac": "0.2.*",
     "grunt":"*",
     "grunt-contrib-jshint":"*",
     "grunt-jsdoc" : "*",
