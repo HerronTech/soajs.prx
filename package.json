@@ -31,7 +31,8 @@
     "grunt-istanbul" : "*",
     "grunt-coveralls" : "*",
     "jshint" : "*",
-    "mocha": "*"
+    "mocha": "*",
+    "shelljs": "*"
 
   },
   "dependencies": {
