@@ -21,16 +21,15 @@ describe("importing sample data", function () {
 
 	after(function (done) {
 		console.log('test data imported.');
-		controller = require("soajs.controller");
+		urac = require("soajs.urac");
+		dashboard = require("soajs.dashboard");
+		proxy = helper.requireModule('./index');
 		setTimeout(function () {
-			urac = require("soajs.urac");
-			dashboard = require("soajs.dashboard");
-			proxy = helper.requireModule('./index');
+			controller = require("soajs.controller");
 			setTimeout(function () {
 				require("./soajs.proxy.test.js");
 				done();
 			}, 1000);
-		}, 4000);
+		}, 2000);
 	});
 });
-
