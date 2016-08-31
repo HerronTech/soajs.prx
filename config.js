@@ -19,9 +19,9 @@ module.exports = {
 	"awarenessEnv": true,
 
 	"errors": {
-		"400": "Database Error",
-		"401": "You do not have access to this environment %envCode%",
-		"402": "The requested host is down."
+		"180": "Database Error",
+		"181": "You do not have access to this environment %envCode%",
+		"182": "The requested host is down."
 	},
 	"schema": {
 		"/redirect" : {
