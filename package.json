@@ -20,7 +20,7 @@
   "devDependencies": {
     "soajs.mongodb.data": "0.2.*",
     "soajs.controller": "0.2.*",
-    "soajs.dashboard": "0.3.*",
+    "soajs.dashboard": "0.4.*",
     "soajs.urac": "0.2.*",
     "grunt":"0.4.5",
     "grunt-contrib-jshint":"*",
