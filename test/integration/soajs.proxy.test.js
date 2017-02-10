@@ -44,7 +44,7 @@ describe("Proxy Tests", function () {
 			assert.ifError(error);
 			assert.ok(body);
 			data = body.data;
-			console.log(JSON.stringify(data, null, 2));
+			// console.log(JSON.stringify(data, null, 2));
 			done();
 		});
 	});
@@ -67,6 +67,7 @@ describe("Proxy Tests", function () {
 		helper.requester('get', options, function (error, body) {
 			assert.ifError(error);
 			assert.ok(body);
+			// console.log(JSON.stringify(body, null, 2));
 			assert.equal(body.result, false);
 			assert.ok(body.errors);
 			done();
@@ -91,12 +92,13 @@ describe("Proxy Tests", function () {
 		helper.requester('get', options, function (error, body) {
 			assert.ifError(error);
 			assert.ok(body);
+			//console.log(JSON.stringify(body, null, 2));
 			assert.equal(body.result, false);
 			assert.ok(body.errors);
 			done();
 		});
 	});
-
+	
 	it("success - will redirect to urac GET protocol", function (done) {
 		var options = {
 			uri: 'http://localhost:4000/proxy/redirect',
@@ -115,6 +117,7 @@ describe("Proxy Tests", function () {
 		helper.requester('get', options, function (error, body) {
 			assert.ifError(error);
 			assert.ok(body);
+			// console.log(JSON.stringify(body, null, 2));
 			assert.equal(body.result, true);
 			assert.ok(body.data);
 			done();

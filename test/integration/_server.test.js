@@ -19,17 +19,59 @@ describe("importing sample data", function () {
 		});
 	});
 
-	after(function (done) {
+	it("starting pre servers", function (done) {
 		console.log('test data imported.');
 		urac = require("soajs.urac");
 		dashboard = require("soajs.dashboard");
-		proxy = helper.requireModule('./index');
 		setTimeout(function () {
 			controller = require("soajs.controller");
 			setTimeout(function () {
-				require("./soajs.proxy.test.js");
 				done();
 			}, 1000);
 		}, 2000);
+	});
+	
+	it("check Controller Registry", function(done){
+		var params = {
+			"uri": "http://127.0.0.1:5000/reloadRegistry",
+			"headers": {
+				"content-type": "application/json"
+			},
+			"json": true
+		};
+		helper.requester("get", params, function (error, response) {
+			assert.ifError(error);
+			assert.ok(response);
+			setTimeout(function () {
+				done();
+			}, 500);
+		});
+	});
+	
+	it("starting proxy", function(done){
+		proxy = helper.requireModule('./index');
+		done();
+	});
+	
+	it("check Controller Registry", function(done){
+		var params = {
+			"uri": "http://127.0.0.1:5000/reloadRegistry",
+			"headers": {
+				"content-type": "application/json"
+			},
+			"json": true
+		};
+		helper.requester("get", params, function (error, response) {
+			assert.ifError(error);
+			assert.ok(response);
+			setTimeout(function () {
+				done();
+			}, 500);
+		});
+	});
+	
+	it("Running Tests", function(done){
+		require("./soajs.proxy.test.js");
+		done();
 	});
 });
