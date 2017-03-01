@@ -12,9 +12,8 @@ module.exports = {
 	"servicePort": 4009,
 	"requestTimeout": 30,
 	"requestTimeoutRenewal": 5,
-	"oauth": true,
+	"oauth": false,
 	"extKeyRequired": true,
-	// "session": true,
 	"awareness": true,
 	"bodyParser": false,
 	"awarenessEnv": true,
@@ -38,9 +37,9 @@ module.exports = {
 					"type": "string"
 				}
 			},
-			"__envauth" : {
+			"proxyRoute" : {
 				"required": true,
-				"source": ["query.__envauth"],
+				"source": ["query.proxyRoute"],
 				"validation": {
 					"type": "string"
 				}

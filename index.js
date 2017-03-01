@@ -1,6 +1,6 @@
 'use strict';
 var soajs = require('soajs');
-var Mongo = soajs.mongo;
+var Mongo = require('soajs.core.modules').mongo;
 var mongo = null;
 
 var config = require('./config.js');
@@ -16,7 +16,7 @@ function checkForMongo(req) {
 service.init(function(){
 	service.all("/redirect", function(req, res){
 		checkForMongo(req);
-		proxy.redirect(config, mongo, req, res);
+		proxy.redirect(config, mongo, service.registry, req, res);
 	});
 
 	/**
