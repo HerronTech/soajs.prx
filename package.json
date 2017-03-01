@@ -34,11 +34,10 @@
     "soajs.dashboard": "0.5.*",
     "soajs.mongodb.data": "0.2.*",
     "soajs.urac": "0.3.*"
-
   },
   "dependencies": {
     "request": "2.79.0",
-    "soajs": "0.4.*",
-    "soajs.core.modules": "0.0.*"
+    "soajs": "git+https://github.com/soajs/soajs.git#feature/sessionLess",
+    "soajs.core.modules": "git+https://github.com/soajs/soajs.core.modules.git#develop"
   }
 }
