@@ -1,6 +1,6 @@
 'use strict';
 var soajs = require('soajs');
-var Mongo = require('soajs.core.modules').mongo;
+var Mongo = require('soajs').mongo;
 var mongo = null;
 
 var config = require('./config.js');
