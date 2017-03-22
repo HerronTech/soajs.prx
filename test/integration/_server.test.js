@@ -3,7 +3,7 @@ var assert = require('assert');
 var helper = require("../helper.js");
 var shell = require('shelljs');
 var sampleData = require("soajs.mongodb.data/modules/proxy");
-var controller, urac, dashboard, proxy;
+var proxy;
 
 describe("importing sample data", function () {
 
@@ -21,53 +21,10 @@ describe("importing sample data", function () {
 
 	it("starting pre servers", function (done) {
 		console.log('test data imported.');
-		urac = require("soajs.urac");
-		dashboard = require("soajs.dashboard");
-		setTimeout(function () {
-			controller = require("soajs.controller");
-			setTimeout(function () {
-				done();
-			}, 1000);
-		}, 2000);
-	});
-	
-	it("check Controller Registry", function(done){
-		var params = {
-			"uri": "http://127.0.0.1:5000/reloadRegistry",
-			"headers": {
-				"content-type": "application/json"
-			},
-			"json": true
-		};
-		helper.requester("get", params, function (error, response) {
-			assert.ifError(error);
-			assert.ok(response);
-			setTimeout(function () {
-				done();
-			}, 500);
-		});
-	});
-	
-	it("starting proxy", function(done){
 		proxy = helper.requireModule('./index');
-		done();
-	});
-	
-	it("check Controller Registry", function(done){
-		var params = {
-			"uri": "http://127.0.0.1:5000/reloadRegistry",
-			"headers": {
-				"content-type": "application/json"
-			},
-			"json": true
-		};
-		helper.requester("get", params, function (error, response) {
-			assert.ifError(error);
-			assert.ok(response);
-			setTimeout(function () {
-				done();
-			}, 500);
-		});
+		setTimeout(function () {
+			done();
+		}, 2000);
 	});
 	
 	it("Running Tests", function(done){
