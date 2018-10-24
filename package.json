@@ -35,7 +35,7 @@
     "soajs.urac": "1.*"
   },
   "dependencies": {
-    "request": "2.79.0",
+    "request": "2.81.0",
     "soajs": "1.0.*"
   }
 }
