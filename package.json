@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "request": "2.79.0",
-    "soajs": "1.0.*"
+    "soajs": "2.1.2"
   }
 }
